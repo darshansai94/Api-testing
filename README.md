@@ -31,9 +31,10 @@ The main intention of the project is to test the close-approach data obtained fr
 3. We have three set of testcases: 
    1. Positive filter value testcases - which tests the response of API on providing positive values for the supported filters.
    2. Zero count condition testcases - which tests the response of API on providing values which results in zero count.
-   3. Invalid filter format testcases - which tests the response of API on providing values which are invalid wrt format for the supported filters.
+   3. Invalid filter format testcases - which tests the response of API on providing values which are invalid wrt format for the supported filters.                
 **Note:** For every above type we have one or two test cases defined, similarly we can define multiple testcases covering all supported filters.
-4.Filter conditions supported in the test suite for fetching the data from the API are as below:
+
+Filter conditions supported in the test suite for fetching the data from the API are as below:
     1.date-min: exclude data earlier than this date YYYY-MM-DD or date/time YYYY-MM-DDThh:mm:ss or now for the current date.
     2.date-max: exclude data later than this date YYYY-MM-DD or date/time YYYY-MM-DDThh:mm:ss or now for the current date.
     3.dist-min: exclude data with an approach distance less than this, e.g., 0.05, 10LD (default units: au)
