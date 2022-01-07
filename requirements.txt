@@ -1,5 +1,0 @@
-pytest
-pytest-instafail
-pytest-html
-requests
-
