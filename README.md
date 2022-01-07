@@ -35,26 +35,21 @@ The main intention of the project is to test the close-approach data obtained fr
 **Note:** For every above type we have one or two test cases defined, similarly we can define multiple testcases covering all supported filters.
 
 Filter conditions supported in the test suite for fetching the data from the API are as below:
-    1.date-min: exclude data earlier than this date YYYY-MM-DD or date/time YYYY-MM-DDThh:mm:ss or now for the current date.
-    2.date-max: exclude data later than this date YYYY-MM-DD or date/time YYYY-MM-DDThh:mm:ss or now for the current date.
-    3.dist-min: exclude data with an approach distance less than this, e.g., 0.05, 10LD (default units: au)
-    4.dist-max: exclude data with an approach distance greater than this (see dist-min)
-    5.min-dist-min: exclude data with an approach minimum-distance less than this, e.g., 0.05, 10LD (default units: au)
-    6.min-dist-max: exclude data with an approach minimum-distance greater than this (see min-dist-min)
-    7.h-min: exclude data from objects with H-values less than this (e.g., 22 meaning objects smaller than this)
-    8.h-max: exclude data from objects with H-value greater than this (e.g., 17.75 meaning objects larger than this)
-    9.v-inf-min: exclude data with V-infinity less than this positive value in km/s (e.g., 18.5)
-    10.v-inf-max: exclude data with V-infinity greater than this positive value in km/s (e.g., 20)
-    11.v-rel-min: exclude data with V-relative less than this positive value in km/s (e.g., 11.2)
-    12.v-rel-max: exclude data with V-relative greater than this positive value in km/s (e.g., 19)
+1.date-min: exclude data earlier than this date YYYY-MM-DD or date/time YYYY-MM-DDThh:mm:ss or now for the current date.
+2.date-max: exclude data later than this date YYYY-MM-DD or date/time YYYY-MM-DDThh:mm:ss or now for the current date.
+3.dist-min: exclude data with an approach distance less than this, e.g., 0.05, 10LD (default units: au)
+4.dist-max: exclude data with an approach distance greater than this (see dist-min)
+5.min-dist-min: exclude data with an approach minimum-distance less than this, e.g., 0.05, 10LD (default units: au)
+6.min-dist-max: exclude data with an approach minimum-distance greater than this (see min-dist-min)
+7.h-min: exclude data from objects with H-values less than this (e.g., 22 meaning objects smaller than this)
+8.h-max: exclude data from objects with H-value greater than this (e.g., 17.75 meaning objects larger than this)
+9.v-inf-min: exclude data with V-infinity less than this positive value in km/s (e.g., 18.5)
+10.v-inf-max: exclude data with V-infinity greater than this positive value in km/s (e.g., 20)
+11.v-rel-min: exclude data with V-relative less than this positive value in km/s (e.g., 11.2)
+12.v-rel-max: exclude data with V-relative greater than this positive value in km/s (e.g., 19)
 
 **Project structure:**
 1. Dockerfile - Which is responsible for bringing up the container with necessary packages and server.
 2. Requirements.txt - Text file which contains necessary python packages needed for the execution.
 3. start.sh - Entry point in the Docker file, which triggers the execution of the testcase and brings up the simple python http server.
 4. testcases.py - python file which is responsible for obtaining expected dataset and executing testcases.
-
-
-
-
-
