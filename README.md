@@ -10,7 +10,7 @@ Pre-requisite:
 Docker should be installed in the machine.
 
 **Step1:**
-Unzip the folder and build the Docker file using the below command:
+Unzip the folder and build the Docker file using the below command:                                                                                              
 docker build -t sbdbcloseapproach:1.0 .
 Note: Assuming the command is executed from the same location where the Docker file resides.
 
@@ -19,7 +19,7 @@ start the container in detached mode exposing port 80 to view the python test re
 docker run -d -it --name python-server -p 80:7000 sbdbcloseapproach:1.0
 
 **step3:**
-Open the https:localhost:80 url in the browser and to visually see the report.
+Open the http://localhost:80 url in the browser and to visually see the report.
 
 
 **High level explanation of the project:**
